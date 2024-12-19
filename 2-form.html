@@ -2,9 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/goit-advancedjs-hw-01/favicon.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 1 for Advanced JS</title>
+    <title>Page 3</title>
+    <script type="module" crossorigin src="/goit-advancedjs-hw-01/2-form.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-01/assets/modulepreload-polyfill-B5Qt9EMX.js">
     <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-01/assets/styles-CqDp9HHQ.css">
   </head>
   <body>
@@ -21,7 +23,7 @@
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./2-form.html"
+          <a class="nav-link active" href="./2-form.html"
             >Form page</a
           >
         </li>
@@ -30,15 +32,16 @@
   </div>
 </header>
 
-    <div class="heading-wrapper">
-      <h1>Advanced JavaScript and TypeScript:<br> Tools and Best Practices</h1>
-      <h2>Homework 1</h2>
-      <h2>Andrii Bielov</h2>
-    </div>
-
-    <ul class="autocheck-hidden-content">
-      <li><a href="./1-gallery.html">Task 1</a></li>
-      <li><a href="./2-form.html">Task 2</a></li>
-    </ul>
+    <form class="feedback-form" autocomplete="off">
+      <label>
+        Email
+        <input type="email" name="email" autofocus />
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="8"></textarea>
+      </label>
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
